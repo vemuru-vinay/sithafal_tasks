@@ -1,0 +1,84 @@
+{
+    "file_name": "Bed3.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Sheet1",
+            "meta_data": [
+                {
+                    "rowIndex": 1,
+                    "content": [
+                        "WARD 7 - NIGHT SHIFT REPORT",
+                        "Date: Feb 12"
+                    ],
+                    "inline_pairs": [
+                        {
+                            "key": "Date",
+                            "value": "Feb 12",
+                            "value_type": "text"
+                        }
+                    ]
+                },
+                {
+                    "rowIndex": 8,
+                    "content": [
+                        "Incoming Admissions:"
+                    ],
+                    "key": "Incoming Admissions",
+                    "values": [],
+                    "value": "",
+                    "value_type": "empty"
+                },
+                {
+                    "rowIndex": 9,
+                    "content": [
+                        "1. Male, 45, Chest pain (Coming 2am?)"
+                    ]
+                },
+                {
+                    "rowIndex": 10,
+                    "content": [
+                        "2. Post-op Hip (Recovery room holding)"
+                    ]
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Bed",
+                        "Patient",
+                        "Issue",
+                        "Action"
+                    ],
+                    "rows": [
+                        {
+                            "Bed": "7A",
+                            "Patient": "M. Lee",
+                            "Issue": "High falls risk",
+                            "Action": "Sitter needed"
+                        },
+                        {
+                            "Bed": "7B",
+                            "Patient": "--",
+                            "Issue": "Empty",
+                            "Action": "Ready for admit"
+                        },
+                        {
+                            "Bed": "7C",
+                            "Patient": "K. West",
+                            "Issue": "Pain mgmt issues",
+                            "Action": "Call resident if >8/10"
+                        },
+                        {
+                            "Bed": "7D",
+                            "Patient": "--",
+                            "Issue": "--",
+                            "Action": "Reserved for AM surgery"
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "file_name": "Dis2.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Sheet1",
+            "meta_data": [
+                {
+                    "rowIndex": 1,
+                    "Title": "CASE MANAGEMENT TRACKER - WEEK 42"
+                },
+                {
+                    "rowIndex": 7,
+                    "content": [
+                        "Notes:",
+                        "Dr. Strange not signing DC orders until labs back."
+                    ],
+                    "key": "Notes",
+                    "value": "Dr. Strange not signing DC orders until labs back.",
+                    "value_type": "text"
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Patient",
+                        "Placement Plan",
+                        "Insurance Status"
+                    ],
+                    "rows": [
+                        {
+                            "Patient": "H. Granger",
+                            "Placement Plan": "Going home with Home Health",
+                            "Insurance Status": "Approved"
+                        },
+                        {
+                            "Patient": "R. Weasley",
+                            "Placement Plan": "Skilled Nursing Facility (SNF)",
+                            "Insurance Status": "Pending auth calling today"
+                        },
+                        {
+                            "Patient": "H. Potter",
+                            "Placement Plan": "Rehab Center",
+                            "Insurance Status": "Denied - Appeal sent"
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                }
+            ]
+        }
+    ]
+}

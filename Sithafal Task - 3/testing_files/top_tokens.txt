@@ -1,0 +1,26 @@
+--- Top Tokens Across All Files ---
+[('bed', 19), ('room', 11), ('3', 9), ('time', 8), ('2', 7), ('patient', 6), ('1', 6), ('5', 6), ('status', 5), ('check', 5)]
+
+--- Top Tokens Across Bed Files ---
+[('room', 6), ('empty', 4), ('patient', 3), ('3', 3), ('bay', 2), ('status', 2), ('1', 2), ('yes', 2), ('2', 2), ('equipment', 2)]
+
+--- Top Tokens Across Dis Files ---
+[('room', 4), ('status', 3), ('sent', 3), ('yes', 2), ('ambulance', 2), ('patient', 2), ('home', 2), ('time', 2), ('bed', 2), ('mike', 2)]
+
+--- Top Tokens Across Food Files ---
+[('bed', 15), ('time', 6), ('lvl', 5), ('3', 5), ('jevity', 5), ('bolus', 5), ('3x', 5), ('day', 5), ('eating', 5), ('solids', 5)]
+
+--- Top Tokens per File ---
+Bed1.xlsx: [('bay', 2), ('yes', 2), ('3', 2), ('equipment', 2), ('ventilator', 1), ('patient', 1), ('status', 1), ('1', 1), ('parker', 1), ('stable', 1)]
+Bed2.xlsx: [('priority', 1), ('patient', 1), ('dest', 1), ('1', 1), ('smith', 1), ('j', 1), ('icu', 1), ('2', 1), ('doe', 1), ('gen', 1)]
+Bed3.xlsx: [('pain', 2), ('bed', 1), ('patient', 1), ('issue', 1), ('action', 1), ('7a', 1), ('lee', 1), ('high', 1), ('falls', 1), ('risk', 1)]
+Bed4.xlsx: [('room', 5), ('empty', 2), ('blocked', 2), ('pending', 2), ('101', 1), ('henderson', 1), ('ortho', 1), ('bed', 1), ('b', 1), ('controls', 1)]
+Dis1.xlsx: [('yes', 2), ('201', 1), ('alice', 1), ('maybe', 1), ('needs', 1), ('family', 1), ('ride', 1), ('son', 1), ('works', 1), ('till', 1)]
+Dis2.xlsx: [('home', 2), ('patient', 1), ('placement', 1), ('plan', 1), ('insurance', 1), ('status', 1), ('granger', 1), ('going', 1), ('health', 1), ('approved', 1)]
+Dis3.xlsx: [('room', 4), ('sent', 2), ('time', 1), ('patient', 1), ('status', 1), ('505', 1), ('done', 1), ('floor', 1), ('509', 1), ('reviewing', 1)]
+Dis4.xlsx: [('bed', 2), ('mike', 2), ('sarah', 2), ('request', 1), ('time', 1), ('porter', 1), ('status', 1), ('4b', 1), ('2', 1), ('main', 1)]
+Food1.xlsx: [('diet', 2), ('regular', 2), ('tea', 2), ('room', 1), ('code', 1), ('preferences', 1), ('allergies', 1), ('901', 1), ('fish', 1), ('black', 1)]
+Food2.xlsx: [('npo', 2), ('patient', 1), ('procedure', 1), ('time', 1), ('instructions', 1), ('bond', 1), ('since', 1), ('midnight', 1), ('clear', 1), ('fluids', 1)]
+Food3.xlsx: [('lvl', 5), ('cart', 4), ('3', 3), ('time', 2), ('4', 2), ('5', 2), ('ward', 1), ('1', 1), ('ortho', 1), ('2', 1)]
+Food4.xlsx: [('bed', 9), ('jevity', 3), ('bolus', 3), ('3x', 3), ('day', 3), ('eating', 3), ('solids', 3), ('stop', 3), ('feed', 3), ('name', 2)]
+Food5.xlsx: [('bed', 6), ('jevity', 2), ('glucerna', 2), ('bolus', 2), ('3x', 2), ('day', 2), ('eating', 2), ('solids', 2), ('stop', 2), ('feed', 2)]

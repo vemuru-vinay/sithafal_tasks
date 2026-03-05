@@ -1,0 +1,235 @@
+{
+  "KPI_Dashboard": [
+    {
+      "department": "Emergency Dept",
+      "data": [
+        {
+          "metric": "ED LWBS%",
+          "target": "0.02",
+          "actual": "0/100"
+        },
+        {
+          "metric": "Median Time for ED Arrival to ED depature (miins)",
+          "target": "180",
+          "actual": "N/A"
+        },
+        {
+          "metric": "ED Holds  lab results on chart on time compliance",
+          "target": "0.9",
+          "actual": "N/A"
+        }
+      ]
+    },
+    {
+      "department": "Surgery/OR",
+      "data": [
+        {
+          "metric": "OR First Case on Time Starts",
+          "target": "0.8",
+          "actual": "20/20"
+        },
+        {
+          "metric": "OB First Case on time starts",
+          "target": "0.8",
+          "actual": "4 out of 4"
+        },
+        {
+          "metric": "PACU Holds",
+          "target": "0",
+          "actual": "N/A"
+        },
+        {
+          "metric": "endo procedures first case on time start",
+          "target": "0.8",
+          "actual": "N/A"
+        }
+      ]
+    },
+    {
+      "department": "EVS/Housekeeping",
+      "data": [
+        {
+          "metric": "EVS Room overall Turn Tim compliance",
+          "target": "0.8",
+          "actual": "(80% and higher would be green)"
+        },
+        {
+          "metric": "Avg turn time (mins)",
+          "target": "55",
+          "actual": "N/A"
+        },
+        {
+          "metric": "# rooms turned",
+          "target": "100",
+          "actual": "N/A"
+        },
+        {
+          "metric": "Number of room TAT's that did not meet goal",
+          "target": "20",
+          "actual": "N/A"
+        }
+      ]
+    },
+    {
+      "department": "Food Service",
+      "data": [
+        {
+          "metric": "Patient Tray Delivery time compliance",
+          "target": "0.95",
+          "actual": "N/A"
+        },
+        {
+          "metric": "Avg delivery Time",
+          "target": "30 mins",
+          "actual": "N/A"
+        },
+        {
+          "metric": "Tray completeness %",
+          "target": "0.9",
+          "actual": "N/A"
+        }
+      ]
+    },
+    {
+      "department": "Pharmacy",
+      "data": [
+        {
+          "metric": "# of Pyxis med stock outs",
+          "target": "10",
+          "actual": "(goals is to have under 10)"
+        },
+        {
+          "metric": "Supply Pyxis stock outs",
+          "target": "50",
+          "actual": "(goals is to have under 50)"
+        },
+        {
+          "metric": "Supply Pyxis null transactions",
+          "target": "50",
+          "actual": "N/A"
+        }
+      ]
+    },
+    {
+      "department": "Transport",
+      "data": [
+        {
+          "metric": "Inhouse transport pending to coplete complaince",
+          "target": "0.9",
+          "actual": "N/A"
+        }
+      ]
+    },
+    {
+      "department": "Laboratory",
+      "data": [
+        {
+          "metric": "Medsurg units lab results on chart on time compliance",
+          "target": "0.9",
+          "actual": "N/A"
+        },
+        {
+          "metric": "OB units lab results on chart on time compliance",
+          "target": "0.9",
+          "actual": "N/A"
+        },
+        {
+          "metric": "Critical Care units lab results on chart on time compliance",
+          "target": "0.9",
+          "actual": "N/A"
+        }
+      ]
+    }
+  ],
+  "Daily_Narrative": [
+    {
+      "source_text": "ED LWBS 0% (0/300), High Acuit...",
+      "department": "Emergency Dept",
+      "metrics": {
+        "ED LWBS": "0% (0/300)",
+        "High Acuity": "15% (47/319)",
+        "Admit LOS": "300 mins",
+        "note": [
+          "Discharge LOS 180 mins",
+          "Door to bed 10 mins",
+          "BED to MD 5 mins",
+          "Dispo to Depart 15 min",
+          "Admission 20% (63 of 319)"
+        ],
+        "Current Holds": "21"
+      }
+    },
+    {
+      "source_text": "total patient census: 34 adult...",
+      "department": "total patient census",
+      "metrics": {
+        "adult": "34",
+        "occupancy": "110%",
+        "note": [
+          "Peds 10 77% occupancy",
+          "All ED 50 89% occupancy 21 holds"
+        ],
+        "NEDOC": "103"
+      }
+    },
+    {
+      "source_text": "OR: Total cases 59; same day a...",
+      "department": "OR",
+      "metrics": {
+        "Total cases": "59",
+        "same day admints": "10",
+        "note": [
+          "inpatients 23 (17 add ons)"
+        ],
+        "outpatients": "26",
+        "robotic cases": "2",
+        "PACU holds": "0",
+        "FCOTS 18 of": "20",
+        "compliance rate": "90%"
+      }
+    },
+    {
+      "source_text": "Sterile processing Department ...",
+      "department": "General",
+      "metrics": {
+        "Sterile processing Department (SPD)": "trays down 57",
+        "immediate use steam slterlization": "0",
+        "equipment/facility concerns": "0"
+      }
+    },
+    {
+      "source_text": "Next day forecast: same day ad...",
+      "department": "Next day forecast",
+      "metrics": {
+        "same day admits": "10",
+        "outpatients": "32",
+        "total cases before add-ons": "46"
+      }
+    },
+    {
+      "source_text": "Same-day cancellations: inpati...",
+      "department": "Same-day cancellations",
+      "metrics": {
+        "inpatient": "9",
+        "outpatient": "4",
+        "admit": "1"
+      }
+    },
+    {
+      "source_text": "EVS: Total cleans 36; cleans b...",
+      "department": "EVS",
+      "metrics": {
+        "Total cleans": "36",
+        "cleans before 12 pm": "6",
+        "cleans after 3 pm": "19",
+        "note": [
+          "avg turn time 42 mins"
+        ],
+        "overal turns in under 45 mins": "28",
+        "overal turns in between 45-60 mins": "6",
+        "overal turns over 60 mins": "2",
+        "of all cleans completed in under 60 mins": "94.44%"
+      }
+    }
+  ]
+}

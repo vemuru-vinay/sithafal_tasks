@@ -1,0 +1,64 @@
+{
+    "file_name": "Dis1.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Sheet1",
+            "meta_data": [
+                {
+                    "rowIndex": 8,
+                    "content": [
+                        "Total potential discharges:",
+                        "3"
+                    ],
+                    "key": "Total potential discharges",
+                    "value": "3",
+                    "value_type": "number"
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Room",
+                        "Name",
+                        "Potential DC?",
+                        "Roadblocks / To-Do"
+                    ],
+                    "rows": [
+                        {
+                            "Room": "201",
+                            "Name": "Alice W.",
+                            "Potential DC?": "MAYBE",
+                            "Roadblocks / To-Do": "Needs family ride (son works till 5)"
+                        },
+                        {
+                            "Room": "202",
+                            "Name": "Bob G.",
+                            "Potential DC?": "NO",
+                            "Roadblocks / To-Do": "Fever spiked last night"
+                        },
+                        {
+                            "Room": "203",
+                            "Name": "Carol D.",
+                            "Potential DC?": "YES",
+                            "Roadblocks / To-Do": "Papers ready. Waiting on Pharmacy."
+                        },
+                        {
+                            "Room": "204",
+                            "Name": "--",
+                            "Potential DC?": "",
+                            "Roadblocks / To-Do": ""
+                        },
+                        {
+                            "Room": "205",
+                            "Name": "Dave L.",
+                            "Potential DC?": "YES",
+                            "Roadblocks / To-Do": "Ambulance booked for 11am"
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "file_name": "Bed2.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Sheet1",
+            "meta_data": [
+                {
+                    "rowIndex": 1,
+                    "content": [
+                        "EMERGENCY HOLDING AREA",
+                        "Updated: 14:00"
+                    ],
+                    "inline_pairs": [
+                        {
+                            "key": "Updated",
+                            "value": "14:00",
+                            "value_type": "time"
+                        }
+                    ]
+                },
+                {
+                    "rowIndex": 7,
+                    "content": [
+                        "Capacity Status:",
+                        "RED",
+                        "(0 beds left)"
+                    ],
+                    "key": "Capacity Status",
+                    "values": [
+                        "RED",
+                        "(0 beds left)"
+                    ],
+                    "value": "RED (0 beds left)",
+                    "value_type": "status"
+                },
+                {
+                    "rowIndex": 8,
+                    "content": [
+                        "Notes:",
+                        "Divert ambulances?",
+                        "Check with Supervisor"
+                    ],
+                    "key": "Notes",
+                    "values": [
+                        "Divert ambulances?",
+                        "Check with Supervisor"
+                    ],
+                    "value": "Divert ambulances? Check with Supervisor",
+                    "value_type": "text"
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Priority",
+                        "Patient",
+                        "Dest."
+                    ],
+                    "rows": [
+                        {
+                            "Priority": "1",
+                            "Patient": "Smith, J",
+                            "Dest.": "ICU"
+                        },
+                        {
+                            "Priority": "2",
+                            "Patient": "Doe, A",
+                            "Dest.": "Gen Med"
+                        },
+                        {
+                            "Priority": "3",
+                            "Patient": "Unknown Male",
+                            "Dest.": "Psych"
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                }
+            ]
+        }
+    ]
+}

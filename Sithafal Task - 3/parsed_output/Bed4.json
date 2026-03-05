@@ -1,0 +1,77 @@
+{
+    "file_name": "Bed4.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Sheet1",
+            "meta_data": [
+                {
+                    "rowIndex": 7,
+                    "rowIndex_end": 8,
+                    "content": [
+                        "Nurse Station",
+                        "Charge: Sarah J.",
+                        "Pager: 5590",
+                        "Overflow",
+                        "1. Pending admit (ED)",
+                        "2. Empty"
+                    ],
+                    "column_pairs": [
+                        {
+                            "key": "Nurse Station",
+                            "value": "Overflow",
+                            "value_type": "text"
+                        },
+                        {
+                            "key": "Charge",
+                            "value": "Sarah J. | 1. Pending admit (ED)",
+                            "value_type": "text"
+                        },
+                        {
+                            "key": "Pager",
+                            "value": "5590 | 2. Empty",
+                            "value_type": "text"
+                        }
+                    ]
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Room / Bed",
+                        "Side A (Window)",
+                        "Side B (Door)",
+                        "Notes / Maintenance"
+                    ],
+                    "rows": [
+                        {
+                            "Room / Bed": "Room 101",
+                            "Side A (Window)": "Mr. Henderson (Ortho)",
+                            "Side B (Door)": "EMPTY",
+                            "Notes / Maintenance": "Bed B controls broken"
+                        },
+                        {
+                            "Room / Bed": "Room 102",
+                            "Side A (Window)": "John Doe (Surgical)",
+                            "Side B (Door)": "--",
+                            "Notes / Maintenance": "Private Room"
+                        },
+                        {
+                            "Room / Bed": "Room 103",
+                            "Side A (Window)": "BLOCKED",
+                            "Side B (Door)": "BLOCKED",
+                            "Notes / Maintenance": "Deep Clean required (Iso)"
+                        },
+                        {
+                            "Room / Bed": "Room 104",
+                            "Side A (Window)": "P. Smith",
+                            "Side B (Door)": "T. Jones",
+                            "Notes / Maintenance": "Both discharge pending"
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                }
+            ]
+        }
+    ]
+}

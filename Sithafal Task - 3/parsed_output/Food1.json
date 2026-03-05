@@ -1,0 +1,62 @@
+{
+    "file_name": "Food1.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Sheet1",
+            "meta_data": [
+                {
+                    "rowIndex": 1,
+                    "Title": "Ward 9 - Lunch Requests"
+                },
+                {
+                    "rowIndex": 8,
+                    "content": [
+                        "Late Trays:",
+                        "1x New admission in 905 (Regular diet)"
+                    ],
+                    "key": "Late Trays",
+                    "value": "1x New admission in 905 (Regular diet)",
+                    "value_type": "text"
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Room",
+                        "Diet Code",
+                        "Preferences / Allergies",
+                        "Tea/Coffee"
+                    ],
+                    "rows": [
+                        {
+                            "Room": "901",
+                            "Diet Code": "REGULAR",
+                            "Preferences / Allergies": "No fish",
+                            "Tea/Coffee": "Tea (Black)"
+                        },
+                        {
+                            "Room": "902",
+                            "Diet Code": "SOFT/MECH",
+                            "Preferences / Allergies": "PEANUT ALLERGY",
+                            "Tea/Coffee": "Coffee (2 sugar)"
+                        },
+                        {
+                            "Room": "903",
+                            "Diet Code": "NPO",
+                            "Preferences / Allergies": "Surgery at 2pm",
+                            "Tea/Coffee": "--"
+                        },
+                        {
+                            "Room": "904",
+                            "Diet Code": "DIABETIC",
+                            "Preferences / Allergies": "Hates broccoli",
+                            "Tea/Coffee": "Tea (w/ Milk)"
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "file_name": "Bed1.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Sheet1",
+            "meta_data": [
+                {
+                    "rowIndex": 1,
+                    "Title": "UNIT: ICU-West"
+                },
+                {
+                    "rowIndex": 8,
+                    "content": [
+                        "Equipment Stored:",
+                        "Bay 5 holds portable X-ray"
+                    ],
+                    "key": "Equipment Stored",
+                    "value": "Bay 5 holds portable X-ray",
+                    "value_type": "text"
+                },
+                {
+                    "rowIndex": 9,
+                    "content": [
+                        "Staffing:",
+                        "3 Nurses short"
+                    ],
+                    "key": "Staffing",
+                    "value": "3 Nurses short",
+                    "value_type": "text"
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Bed",
+                        "Ventilator?",
+                        "Patient",
+                        "Status"
+                    ],
+                    "rows": [
+                        {
+                            "Bed": "1",
+                            "Ventilator?": "YES",
+                            "Patient": "P. Parker",
+                            "Status": "Stable"
+                        },
+                        {
+                            "Bed": "2",
+                            "Ventilator?": "YES",
+                            "Patient": "B. Wayne",
+                            "Status": "Critical"
+                        },
+                        {
+                            "Bed": "3",
+                            "Ventilator?": "NO",
+                            "Patient": "--",
+                            "Status": "Empty / Equipment check"
+                        },
+                        {
+                            "Bed": "4",
+                            "Ventilator?": "NO",
+                            "Patient": "C. Kent",
+                            "Status": "Extubated today"
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                }
+            ]
+        }
+    ]
+}

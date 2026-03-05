@@ -1,0 +1,51 @@
+Project_ID,Client_Name,Service_Type,Start_Date,End_Date,Team_Size,Budget_USD,Project_Status
+PRJ-1000,Futurewave labs,DATA ENGINEERING,06-01-2024,"Feb 09, 2024",5,40k,completed
+PRJ-1001, bluepeak systems,ai development,"Jun 03, 2024","Jan 29, 2024",10,50000,IN PROGRESS
+PRJ-1002,CLOUDSPHERE Pvt Ltd,cloud migration,23-01-2024,01-07-2024,15,,IN PROGRESS
+PRJ-1003,,cloud migration,"Jan 29, 2024",08-May-24,12,,Delayed 
+PRJ-1004,Futurewave labs,DATA ENGINEERING,15-06-2024,17-04-2024,5,, delayed
+PRJ-1005,BluePeak Systems ,cloud migration,12-02-2024,16-01-2024,,,completed
+PRJ-1006,Futurewave labs,ai development,22-08-2024,02-06-2024,10,,In progress
+PRJ-1007,CLOUDSPHERE Pvt Ltd,ai development,04/20/2024,05-Jul-24,2,50000,Completed
+PRJ-1008,,DATA ENGINEERING,02/15/2024,"Feb 13, 2024",15,50000,
+PRJ-1009, bluepeak systems,Web-App Dev,10-06-2024,27-02-2024,15,USD 30000,Completed
+PRJ-1010,CLOUDSPHERE Pvt Ltd,,"Oct 14, 2024",13-03-2024,12,ten thousand,Completed
+PRJ-1011,CLOUDSPHERE Pvt Ltd,Web App Development,04-11-2024,11-09-2024,15,15000,In progress
+PRJ-1012,BluePeak Systems ,Web-App Dev,"Jul 28, 2024",02-Oct-24,5,"5,000",Completed
+PRJ-1013,FutureWave Labs,Cloud Migration ,10-05-2024,15-06-2024,,,completed
+PRJ-1014,,ai development,"Sep 16, 2024",09/14/2024,15,"20,000",completed
+PRJ-1015,technova corp,Cloud Migration ,21-05-2024,10-02-2024,15,"5,000",IN PROGRESS
+PRJ-1016,CLOUDSPHERE Pvt Ltd,Web-App Dev,"Mar 27, 2024","Apr 07, 2024",2,50000,Delayed 
+PRJ-1017,FutureWave Labs,Web App Development,"Aug 25, 2024",07-05-2024,2,"20,000", delayed
+PRJ-1018,technova corp,Web App Development,"Apr 06, 2024",08-04-2024,8,"20,000",
+PRJ-1019,,AI Development,18-Sep-24,08-06-2024,10,"20,000",Completed
+PRJ-1020,TechNova Corp,Web App Development,06-02-2024,"Jan 30, 2024",5,USD 30000,Completed
+PRJ-1021,FutureWave Labs,,01-04-2024,07/24/2024,15,50000,In progress
+PRJ-1022,cloudSphere pvt ltd,Web App Development,21-02-2024,14-05-2024,50,"20,000",Delayed 
+PRJ-1023,TechNova Corp,Web-App Dev,"Aug 11, 2024","May 10, 2024",15,,completed
+PRJ-1024,BluePeak Systems ,AI Development,30-03-2024,29-Aug-24,,40k,
+PRJ-1025,Futurewave labs,Web-App Dev,26-04-2024,"Feb 08, 2024",8,"20,000",IN PROGRESS
+PRJ-1026, bluepeak systems,Web-App Dev,27-02-2024,21-Jul-24,10,USD 30000,completed
+PRJ-1027,cloudSphere pvt ltd,Data Engineering,"Jan 14, 2024",04-06-2024,50,"5,000",Delayed 
+PRJ-1028,BluePeak Systems ,AI Development,"Sep 23, 2024",31-05-2024,8,50000, delayed
+PRJ-1029,,Web-App Dev,06-05-2024,29-03-2024,12,ten thousand,IN PROGRESS
+PRJ-1030,BluePeak Systems ,Data Engineering,29-06-2024,05/23/2024,10,USD 30000, delayed
+PRJ-1031,Futurewave labs,Data Engineering,"Jun 21, 2024",20-04-2024,15,"20,000",In progress
+PRJ-1032,,AI Development,28-Jun-24,05-07-2024,15,50000,In progress
+PRJ-1033,cloudSphere pvt ltd,Cloud Migration ,21-10-2024,25-Jan-24,10,40k,Completed
+PRJ-1034,Futurewave labs,,05-09-2024,15-01-2024,15,"20,000", delayed
+PRJ-1035,technova corp,Web App Development,05-06-2024,01/23/2024,5,USD 30000,Delayed 
+PRJ-1036, bluepeak systems,,05-09-2024,02-Apr-24,10,15000,
+PRJ-1037,cloudSphere pvt ltd,Web App Development,"Sep 09, 2024","Jul 28, 2024",8,,IN PROGRESS
+PRJ-1038,technova corp,Web-App Dev,"Jul 30, 2024","Mar 25, 2024",10,ten thousand,completed
+PRJ-1039,cloudSphere pvt ltd,ai development,31-05-2024,"Sep 10, 2024",50,"5,000",Delayed 
+PRJ-1040,,AI Development,21-01-2024,03-05-2024,15,USD 30000,Delayed 
+PRJ-1041,technova corp,,22-03-2024,24-08-2024,5,50000,In progress
+PRJ-1042, bluepeak systems,,"Jul 26, 2024","Mar 23, 2024",5,ten thousand, delayed
+PRJ-1043,Futurewave labs,Web-App Dev,27-Oct-24,08-Feb-24,12,ten thousand,Completed
+PRJ-1044,CLOUDSPHERE Pvt Ltd,Cloud Migration ,04-06-2024,09-05-2024,8,ten thousand,Completed
+PRJ-1003,BluePeak Systems ,Data Engineering,12-Mar-24,15-02-2024,2,"20,000",IN PROGRESS
+PRJ-1010,TechNova Corp,Web-App Dev,21-01-2024,09-09-2024,2,,In progress
+PRJ-1020, bluepeak systems,cloud migration,21-07-2024,02-Sep-24,10,"20,000",Delayed 
+PRJ-1030,technova corp,Data Engineering,26-02-2024,03-Jun-24,12,50000,
+PRJ-1040,CLOUDSPHERE Pvt Ltd,AI Development,07/28/2024,13-May-24,,"20,000",In progress

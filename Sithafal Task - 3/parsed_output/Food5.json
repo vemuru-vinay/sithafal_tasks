@@ -1,0 +1,71 @@
+{
+    "file_name": "Food5.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Sheet1",
+            "meta_data": [
+                {
+                    "rowIndex": 1,
+                    "content": [
+                        "ENTERAL FEEDS",
+                        "SCHEDULE"
+                    ]
+                },
+                {
+                    "rowIndex": 3,
+                    "content": [
+                        "Stock Check:",
+                        "Need more sterile water bottles"
+                    ],
+                    "key": "Stock Check",
+                    "value": "Need more sterile water bottles",
+                    "value_type": "text"
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Row Label",
+                        "A",
+                        "B",
+                        "C",
+                        "D",
+                        "E",
+                        "F"
+                    ],
+                    "rows": [
+                        {
+                            "Row Label": "Name",
+                            "A": "Jevity 1.5",
+                            "B": "Glucerna",
+                            "C": "--",
+                            "D": "Jevity 1.5",
+                            "E": "Glucerna",
+                            "F": "--"
+                        },
+                        {
+                            "Row Label": "Formula",
+                            "A": "60ml/hr",
+                            "B": "Bolus (3x day)",
+                            "C": "Eating solids now",
+                            "D": "60ml/hr",
+                            "E": "Bolus (3x day)",
+                            "F": "Eating solids now"
+                        },
+                        {
+                            "Row Label": "Refill Time",
+                            "A": "14:01",
+                            "B": "08:00, 12:00, 17:00",
+                            "C": "STOP FEED",
+                            "D": "14:00",
+                            "E": "08:00, 12:00, 17:00",
+                            "F": "STOP FEED"
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                }
+            ]
+        }
+    ]
+}

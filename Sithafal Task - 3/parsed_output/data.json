@@ -1,0 +1,589 @@
+{
+    "file_name": "data.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Targets",
+            "meta_data": [
+                {
+                    "rowIndex": 31,
+                    "content": [
+                        "Inhouse transport pending to coplete complaince",
+                        "0.9"
+                    ]
+                },
+                {
+                    "rowIndex": 32,
+                    "Title": "# of discharge transports"
+                },
+                {
+                    "rowIndex": 33,
+                    "Title": "# of transports that did not meet goal"
+                },
+                {
+                    "rowIndex": 49,
+                    "Title": "cath lab"
+                },
+                {
+                    "rowIndex": 52,
+                    "Title": "EP lab"
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Metric",
+                        "target",
+                        "consumed data",
+                        "result value - KPI + Stored as historic"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "ED LWBS%",
+                            "target": "0.02",
+                            "consumed data": "0/100",
+                            "result value - KPI + Stored as historic": "0"
+                        },
+                        {
+                            "Metric": "Median Time for Admint to Decision to ED depature ",
+                            "target": "",
+                            "consumed data": "",
+                            "result value - KPI + Stored as historic": ""
+                        },
+                        {
+                            "Metric": "Median Time for ED Arrival to ED depature (miins)",
+                            "target": "180",
+                            "consumed data": "",
+                            "result value - KPI + Stored as historic": ""
+                        },
+                        {
+                            "Metric": "OR First Case on Time Starts",
+                            "target": "0.8",
+                            "consumed data": "20/20",
+                            "result value - KPI + Stored as historic": "1"
+                        },
+                        {
+                            "Metric": "Number of certain type of cases",
+                            "target": "",
+                            "consumed data": "",
+                            "result value - KPI + Stored as historic": ""
+                        },
+                        {
+                            "Metric": "OB First Case on time starts",
+                            "target": "0.8",
+                            "consumed data": "4 out of 4",
+                            "result value - KPI + Stored as historic": "1"
+                        },
+                        {
+                            "Metric": "PACU Holds",
+                            "target": "0",
+                            "consumed data": "",
+                            "result value - KPI + Stored as historic": ""
+                        },
+                        {
+                            "Metric": "endo procedures first case on time start",
+                            "target": "0.8",
+                            "consumed data": "",
+                            "result value - KPI + Stored as historic": ""
+                        },
+                        {
+                            "Metric": "# procedures schudueld",
+                            "target": "",
+                            "consumed data": "",
+                            "result value - KPI + Stored as historic": ""
+                        },
+                        {
+                            "Metric": "# procedures completed",
+                            "target": "",
+                            "consumed data": "",
+                            "result value - KPI + Stored as historic": ""
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                },
+                {
+                    "headers": [
+                        "Metric",
+                        "Value",
+                        "Notes"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "EVS Room overall Turn Tim compliance",
+                            "Value": "0.8",
+                            "Notes": "(80% and higher would be green)"
+                        },
+                        {
+                            "Metric": "Avg turn time (mins)",
+                            "Value": "55"
+                        },
+                        {
+                            "Metric": "# rooms turned",
+                            "Value": "100"
+                        },
+                        {
+                            "Metric": "Number of room TAT's that did not meet goal",
+                            "Value": "20"
+                        }
+                    ],
+                    "was_rotated": true,
+                    "table_orientation": "vertical"
+                },
+                {
+                    "headers": [
+                        "Metric",
+                        "Value"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "Patient Tray Delivery time compliance",
+                            "Value": "0.95"
+                        },
+                        {
+                            "Metric": "Avg delivery Time",
+                            "Value": "30 mins"
+                        },
+                        {
+                            "Metric": "# trays ordered",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# trays delivered",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# trays that did not meet goal",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "Tray completeness %",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# trays inspected",
+                            "Value": ""
+                        }
+                    ],
+                    "was_rotated": true,
+                    "table_orientation": "vertical"
+                },
+                {
+                    "headers": [
+                        "Metric",
+                        "Value",
+                        "Notes"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "# of Pyxis med stock outs",
+                            "Value": "10",
+                            "Notes": "(goals is to have under 10)"
+                        },
+                        {
+                            "Metric": "Supply Pyxis stock outs",
+                            "Value": "50",
+                            "Notes": "(goals is to have under 50)"
+                        },
+                        {
+                            "Metric": "Supply Pyxis null transactions",
+                            "Value": "50"
+                        }
+                    ],
+                    "was_rotated": true,
+                    "table_orientation": "vertical"
+                },
+                {
+                    "headers": [
+                        "Metric",
+                        "Value"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "Medsurg units lab results on chart on time compliance",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# results reported",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# results meeting goal",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "OB units lab results on chart on time compliance",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# results reported",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# results meeting goal",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "ED Holds  lab results on chart on time compliance",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# results reported",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# results meeting goal",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "Critical Care units lab results on chart on time compliance",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# results reported",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# results meeting goal",
+                            "Value": ""
+                        }
+                    ],
+                    "was_rotated": true,
+                    "table_orientation": "vertical"
+                }
+            ]
+        },
+        {
+            "sheet_name": "additional data",
+            "meta_data": [
+                {
+                    "rowIndex": 2,
+                    "Title": "ED LWBS 0% (0/300), High Acuity 15% (47/319), Admit LOS 300 mins; Discharge LOS 180 mins; Door to bed 10 mins; BED to MD 5 mins; Dispo to Depart 15 min; Admission 20% (63 of 319); Current Holds 21"
+                },
+                {
+                    "rowIndex": 4,
+                    "Title": "total patient census: 34 adult; 110% occupancy; Peds 10 77% occupancy; All ED 50 89% occupancy 21 holds;; NEDOC 103"
+                },
+                {
+                    "rowIndex": 6,
+                    "Title": "OR: Total cases 59; same day admints 10; inpatients 23 (17 add ons); outpatients 26; robotic cases 2; PACU holds 0; FCOTS 18 of 20; 90% compliance rate"
+                },
+                {
+                    "rowIndex": 7,
+                    "Title": "Sterile processing Department (SPD): trays down 57; immediate use steam slterlization 0; equipment/facility concerns 0"
+                },
+                {
+                    "rowIndex": 8,
+                    "Title": "Next day forecast: same day admits 10; outpatients 32; total cases before add-ons 46"
+                },
+                {
+                    "rowIndex": 9,
+                    "Title": "Same-day cancellations: inpatient 9; outpatient 4; admit 1"
+                },
+                {
+                    "rowIndex": 11,
+                    "Title": "EVS: Total cleans 36; cleans before 12 pm 6; cleans after 3 pm 19; avg turn time 42 mins; overal turns in under 45 mins 28; overal turns in between 45-60 mins 6; overal turns over 60 mins 2; 94.44% of all cleans completed in under 60 mins"
+                }
+            ],
+            "tables": []
+        },
+        {
+            "sheet_name": "Targets_modified",
+            "meta_data": [
+                {
+                    "rowIndex": 31,
+                    "content": [
+                        "Inhouse transport pending to coplete complaince",
+                        "0.9"
+                    ]
+                },
+                {
+                    "rowIndex": 32,
+                    "Title": "# of discharge transports"
+                },
+                {
+                    "rowIndex": 33,
+                    "Title": "# of transports that did not meet goal"
+                },
+                {
+                    "rowIndex": 49,
+                    "Title": "cath lab"
+                },
+                {
+                    "rowIndex": 52,
+                    "Title": "EP lab"
+                },
+                {
+                    "rowIndex": 2,
+                    "Title": "Definitions: ED: Emergency Department"
+                },
+                {
+                    "rowIndex": 4,
+                    "Title": "LWBS: Left Without Being Seen. The percentage of patients who check in but leave before being evaluated by a provider."
+                },
+                {
+                    "rowIndex": 6,
+                    "Title": "LOS: Length of Stay. The time a patient spends in a specific phase of care."
+                },
+                {
+                    "rowIndex": 8,
+                    "Title": "NEDOC: National Emergency Department Overcrowding Scale. A score calculated to estimate the degree of overcrowding (0-200 scale)."
+                },
+                {
+                    "rowIndex": 10,
+                    "Title": "OR: Operating Room"
+                },
+                {
+                    "rowIndex": 12,
+                    "Title": "PACU: Post-Anesthesia Care Unit. The recovery room where patients go after surgery."
+                },
+                {
+                    "rowIndex": 14,
+                    "Title": "FCOTS: First Case On Time Starts. A measure of efficiency ensuring the first surgeries of the day begin as scheduled."
+                },
+                {
+                    "rowIndex": 16,
+                    "Title": "SPD: Sterile Processing Department. The department responsible for cleaning and sterilizing surgical instruments."
+                },
+                {
+                    "rowIndex": 18,
+                    "Title": "EVS: Environmental Services. The housekeeping department responsible for cleaning rooms."
+                },
+                {
+                    "rowIndex": 20,
+                    "Title": "TAT: Turnaround Time. The time it takes to complete a process (e.g., cleaning a room between patients)."
+                },
+                {
+                    "rowIndex": 22,
+                    "Title": "OB: Obstetrics (Maternity care)."
+                },
+                {
+                    "rowIndex": 24,
+                    "Title": "Pyxis: An automated medication dispensing system (metric tracks stock-outs or errors)."
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Metric",
+                        "target - set by hospital",
+                        "consumed data/actual data",
+                        "result value - KPI + Stored as historic"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "ED LWBS%",
+                            "target - set by hospital": "0.02",
+                            "consumed data/actual data": "0/100",
+                            "result value - KPI + Stored as historic": "0"
+                        },
+                        {
+                            "Metric": "Median Time for Admint to Decision to ED depature ",
+                            "target - set by hospital": "",
+                            "consumed data/actual data": "",
+                            "result value - KPI + Stored as historic": ""
+                        },
+                        {
+                            "Metric": "Median Time for ED Arrival to ED depature (miins)",
+                            "target - set by hospital": "180",
+                            "consumed data/actual data": "",
+                            "result value - KPI + Stored as historic": ""
+                        },
+                        {
+                            "Metric": "OR First Case on Time Starts",
+                            "target - set by hospital": "0.8",
+                            "consumed data/actual data": "20/20",
+                            "result value - KPI + Stored as historic": "1"
+                        },
+                        {
+                            "Metric": "Number of certain type of cases",
+                            "target - set by hospital": "",
+                            "consumed data/actual data": "",
+                            "result value - KPI + Stored as historic": ""
+                        },
+                        {
+                            "Metric": "OB First Case on time starts",
+                            "target - set by hospital": "0.8",
+                            "consumed data/actual data": "4 out of 4",
+                            "result value - KPI + Stored as historic": "1"
+                        },
+                        {
+                            "Metric": "PACU Holds",
+                            "target - set by hospital": "0",
+                            "consumed data/actual data": "",
+                            "result value - KPI + Stored as historic": ""
+                        },
+                        {
+                            "Metric": "endo procedures first case on time start",
+                            "target - set by hospital": "0.8",
+                            "consumed data/actual data": "",
+                            "result value - KPI + Stored as historic": ""
+                        },
+                        {
+                            "Metric": "# procedures schudueld",
+                            "target - set by hospital": "",
+                            "consumed data/actual data": "",
+                            "result value - KPI + Stored as historic": ""
+                        },
+                        {
+                            "Metric": "# procedures completed",
+                            "target - set by hospital": "",
+                            "consumed data/actual data": "",
+                            "result value - KPI + Stored as historic": ""
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                },
+                {
+                    "headers": [
+                        "Metric",
+                        "Value",
+                        "Notes"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "EVS Room overall Turn Tim compliance",
+                            "Value": "0.8",
+                            "Notes": "(80% and higher would be green)"
+                        },
+                        {
+                            "Metric": "Avg turn time (mins)",
+                            "Value": "55"
+                        },
+                        {
+                            "Metric": "# rooms turned",
+                            "Value": "100"
+                        },
+                        {
+                            "Metric": "Number of room TAT's that did not meet goal",
+                            "Value": "20"
+                        }
+                    ],
+                    "was_rotated": true,
+                    "table_orientation": "vertical"
+                },
+                {
+                    "headers": [
+                        "Metric",
+                        "Value"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "Patient Tray Delivery time compliance",
+                            "Value": "0.95"
+                        },
+                        {
+                            "Metric": "Avg delivery Time",
+                            "Value": "30 mins"
+                        },
+                        {
+                            "Metric": "# trays ordered",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# trays delivered",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# trays that did not meet goal",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "Tray completeness %",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# trays inspected",
+                            "Value": ""
+                        }
+                    ],
+                    "was_rotated": true,
+                    "table_orientation": "vertical"
+                },
+                {
+                    "headers": [
+                        "Metric",
+                        "Value",
+                        "Notes"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "# of Pyxis med stock outs",
+                            "Value": "10",
+                            "Notes": "(goals is to have under 10)"
+                        },
+                        {
+                            "Metric": "Supply Pyxis stock outs",
+                            "Value": "50",
+                            "Notes": "(goals is to have under 50)"
+                        },
+                        {
+                            "Metric": "Supply Pyxis null transactions",
+                            "Value": "50"
+                        }
+                    ],
+                    "was_rotated": true,
+                    "table_orientation": "vertical"
+                },
+                {
+                    "headers": [
+                        "Metric",
+                        "Value"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "Medsurg units lab results on chart on time compliance",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# results reported",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# results meeting goal",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "OB units lab results on chart on time compliance",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# results reported",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# results meeting goal",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "ED Holds  lab results on chart on time compliance",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# results reported",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# results meeting goal",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "Critical Care units lab results on chart on time compliance",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# results reported",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# results meeting goal",
+                            "Value": ""
+                        }
+                    ],
+                    "was_rotated": true,
+                    "table_orientation": "vertical"
+                }
+            ]
+        }
+    ]
+}

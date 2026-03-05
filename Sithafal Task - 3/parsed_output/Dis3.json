@@ -1,0 +1,65 @@
+{
+    "file_name": "Dis3.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Sheet1",
+            "meta_data": [
+                {
+                    "rowIndex": 1,
+                    "content": [
+                        "DISCHARGE MEDS",
+                        "PHARMACY QUEUE"
+                    ]
+                },
+                {
+                    "rowIndex": 8,
+                    "content": [
+                        "Courier Run Times:",
+                        "10am",
+                        "2pm"
+                    ],
+                    "key": "Courier Run Times",
+                    "values": [
+                        "10am",
+                        "2pm"
+                    ],
+                    "value": "10am 2pm",
+                    "value_type": "text"
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Time Sent",
+                        "Patient",
+                        "Status"
+                    ],
+                    "rows": [
+                        {
+                            "Time Sent": "9:30",
+                            "Patient": "Room 505",
+                            "Status": "DONE - Sent to floor"
+                        },
+                        {
+                            "Time Sent": "10:15",
+                            "Patient": "Room 509",
+                            "Status": "Reviewing (Interaction check)"
+                        },
+                        {
+                            "Time Sent": "10:45",
+                            "Patient": "Room 512",
+                            "Status": "MISSING SCRIPT"
+                        },
+                        {
+                            "Time Sent": "11:00",
+                            "Patient": "Room 501",
+                            "Status": "Processing..."
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                }
+            ]
+        }
+    ]
+}

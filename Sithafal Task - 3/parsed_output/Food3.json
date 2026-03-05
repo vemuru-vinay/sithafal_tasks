@@ -1,0 +1,65 @@
+{
+    "file_name": "Food3.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Sheet1",
+            "meta_data": [
+                {
+                    "rowIndex": 1,
+                    "content": [
+                        "CATERING LOG",
+                        "B-WING"
+                    ]
+                },
+                {
+                    "rowIndex": 7,
+                    "content": [
+                        "Complaints:",
+                        "Soup cold on Lvl 4 yesterday."
+                    ],
+                    "key": "Complaints",
+                    "value": "Soup cold on Lvl 4 yesterday.",
+                    "value_type": "text"
+                },
+                {
+                    "rowIndex": 8,
+                    "content": [
+                        "Returns:",
+                        "5 trays untouched from Lvl 3."
+                    ],
+                    "key": "Returns",
+                    "value": "5 trays untouched from Lvl 3.",
+                    "value_type": "text"
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Cart #",
+                        "Ward",
+                        "Time Out / Time In"
+                    ],
+                    "rows": [
+                        {
+                            "Cart #": "Cart 1",
+                            "Ward": "Ortho (Lvl 3)",
+                            "Time Out / Time In": "11:45 / 11:55"
+                        },
+                        {
+                            "Cart #": "Cart 2",
+                            "Ward": "Rehab (Lvl 4)",
+                            "Time Out / Time In": "11:50 / 12:05 (Elevator delay)"
+                        },
+                        {
+                            "Cart #": "Cart 3",
+                            "Ward": "Psych (Lvl 5)",
+                            "Time Out / Time In": "12:00 / --"
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                }
+            ]
+        }
+    ]
+}

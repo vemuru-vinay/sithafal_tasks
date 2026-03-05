@@ -1,0 +1,268 @@
+{
+    "file_name": "raw.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Targets",
+            "meta_data": [
+                {
+                    "rowIndex": 2,
+                    "content": [
+                        "Metric",
+                        "target"
+                    ]
+                },
+                {
+                    "rowIndex": 31,
+                    "content": [
+                        "Inhouse transport pending to coplete complaince",
+                        "0.9"
+                    ]
+                },
+                {
+                    "rowIndex": 32,
+                    "Title": "# of discharge transports"
+                },
+                {
+                    "rowIndex": 33,
+                    "Title": "# of transports that did not meet goal"
+                },
+                {
+                    "rowIndex": 49,
+                    "Title": "cath lab"
+                },
+                {
+                    "rowIndex": 52,
+                    "Title": "EP lab"
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Metric",
+                        "Value",
+                        "Notes"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "ED LWBS%",
+                            "Value": "0.02",
+                            "Notes": "0/100"
+                        },
+                        {
+                            "Metric": "Median Time for Admint to Decision to ED depature",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "Median Time for ED Arrival to ED depature (miins)",
+                            "Value": "180"
+                        },
+                        {
+                            "Metric": "OR First Case on Time Starts",
+                            "Value": "0.8",
+                            "Notes": "20/20"
+                        },
+                        {
+                            "Metric": "Number of certain type of cases",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "OB First Case on time starts",
+                            "Value": "0.8",
+                            "Notes": "4 out of 4"
+                        },
+                        {
+                            "Metric": "PACU Holds",
+                            "Value": "0"
+                        },
+                        {
+                            "Metric": "endo procedures first case on time start",
+                            "Value": "0.8"
+                        },
+                        {
+                            "Metric": "# procedures schudueld",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# procedures completed",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "EVS Room overall Turn Tim compliance",
+                            "Value": "0.8",
+                            "Notes": "(80% and higher would be green)"
+                        },
+                        {
+                            "Metric": "Avg turn time (mins)",
+                            "Value": "55"
+                        },
+                        {
+                            "Metric": "# rooms turned",
+                            "Value": "100"
+                        },
+                        {
+                            "Metric": "Number of room TAT's that did not meet goal",
+                            "Value": "20"
+                        }
+                    ],
+                    "was_rotated": true,
+                    "table_orientation": "vertical"
+                },
+                {
+                    "headers": [
+                        "Metric",
+                        "Value"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "Patient Tray Delivery time compliance",
+                            "Value": "0.95"
+                        },
+                        {
+                            "Metric": "Avg delivery Time",
+                            "Value": "30 mins"
+                        },
+                        {
+                            "Metric": "# trays ordered",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# trays delivered",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# trays that did not meet goal",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "Tray completeness %",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# trays inspected",
+                            "Value": ""
+                        }
+                    ],
+                    "was_rotated": true,
+                    "table_orientation": "vertical"
+                },
+                {
+                    "headers": [
+                        "Metric",
+                        "Value",
+                        "Notes"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "# of Pyxis med stock outs",
+                            "Value": "10",
+                            "Notes": "(goals is to have under 10)"
+                        },
+                        {
+                            "Metric": "Supply Pyxis stock outs",
+                            "Value": "50",
+                            "Notes": "(goals is to have under 50)"
+                        },
+                        {
+                            "Metric": "Supply Pyxis null transactions",
+                            "Value": "50"
+                        }
+                    ],
+                    "was_rotated": true,
+                    "table_orientation": "vertical"
+                },
+                {
+                    "headers": [
+                        "Metric",
+                        "Value"
+                    ],
+                    "rows": [
+                        {
+                            "Metric": "Medsurg units lab results on chart on time compliance",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# results reported",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# results meeting goal",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "OB units lab results on chart on time compliance",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# results reported",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# results meeting goal",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "ED Holds  lab results on chart on time compliance",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# results reported",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# results meeting goal",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "Critical Care units lab results on chart on time compliance",
+                            "Value": "0.9"
+                        },
+                        {
+                            "Metric": "# results reported",
+                            "Value": ""
+                        },
+                        {
+                            "Metric": "# results meeting goal",
+                            "Value": ""
+                        }
+                    ],
+                    "was_rotated": true,
+                    "table_orientation": "vertical"
+                }
+            ]
+        },
+        {
+            "sheet_name": "additional data",
+            "meta_data": [
+                {
+                    "rowIndex": 2,
+                    "Title": "ED LWBS 0% (0/300), High Acuity 15% (47/319), Admit LOS 300 mins; Discharge LOS 180 mins; Door to bed 10 mins; BED to MD 5 mins; Dispo to Depart 15 min; Admission 20% (63 of 319); Current Holds 21"
+                },
+                {
+                    "rowIndex": 4,
+                    "Title": "total patient census: 34 adult; 110% occupancy; Peds 10 77% occupancy; All ED 50 89% occupancy 21 holds;; NEDOC 103"
+                },
+                {
+                    "rowIndex": 6,
+                    "Title": "OR: Total cases 59; same day admints 10; inpatients 23 (17 add ons); outpatients 26; robotic cases 2; PACU holds 0; FCOTS 18 of 20; 90% compliance rate"
+                },
+                {
+                    "rowIndex": 7,
+                    "Title": "Sterile processing Department (SPD): trays down 57; immediate use steam slterlization 0; equipment/facility concerns 0"
+                },
+                {
+                    "rowIndex": 8,
+                    "Title": "Next day forecast: same day admits 10; outpatients 32; total cases before add-ons 46"
+                },
+                {
+                    "rowIndex": 9,
+                    "Title": "Same-day cancellations: inpatient 9; outpatient 4; admit 1"
+                },
+                {
+                    "rowIndex": 11,
+                    "Title": "EVS: Total cleans 36; cleans before 12 pm 6; cleans after 3 pm 19; avg turn time 42 mins; overal turns in under 45 mins 28; overal turns in between 45-60 mins 6; overal turns over 60 mins 2; 94.44% of all cleans completed in under 60 mins"
+                }
+            ],
+            "tables": []
+        }
+    ]
+}

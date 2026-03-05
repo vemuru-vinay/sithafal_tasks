@@ -1,0 +1,55 @@
+{
+    "file_name": "Food2.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Sheet1",
+            "meta_data": [
+                {
+                    "rowIndex": 1,
+                    "content": [
+                        "FASTING LIST",
+                        "TUESDAY"
+                    ]
+                },
+                {
+                    "rowIndex": 7,
+                    "content": [
+                        "Notify Kitchen:",
+                        "Hold trays for Rooms 10, 11, 12"
+                    ],
+                    "key": "Notify Kitchen",
+                    "value": "Hold trays for Rooms 10, 11, 12",
+                    "value_type": "text"
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Patient",
+                        "Procedure Time",
+                        "Instructions"
+                    ],
+                    "rows": [
+                        {
+                            "Patient": "J. Bond",
+                            "Procedure Time": "08:00:00",
+                            "Instructions": "NPO since Midnight (Clear fluids ok till 6am)"
+                        },
+                        {
+                            "Patient": "I. Jones",
+                            "Procedure Time": "14:00:00",
+                            "Instructions": "Light breakfast allowed before 7am"
+                        },
+                        {
+                            "Patient": "L. Croft",
+                            "Procedure Time": "TBD",
+                            "Instructions": "STRICT NPO (Emergency add-on)"
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                }
+            ]
+        }
+    ]
+}

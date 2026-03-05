@@ -1,0 +1,71 @@
+{
+    "file_name": "Dis4.xlsx",
+    "sheets": [
+        {
+            "sheet_name": "Sheet1",
+            "meta_data": [
+                {
+                    "rowIndex": 1,
+                    "content": [
+                        "DATE: OCT 15",
+                        "PORTER LOG"
+                    ],
+                    "inline_pairs": [
+                        {
+                            "key": "DATE",
+                            "value": "OCT 15",
+                            "value_type": "text"
+                        }
+                    ]
+                },
+                {
+                    "rowIndex": 7,
+                    "content": [
+                        "Lunch Breaks:",
+                        "Mike (12-12:30)",
+                        "Sarah (12:30-1)"
+                    ],
+                    "key": "Lunch Breaks",
+                    "values": [
+                        "Mike (12-12:30)",
+                        "Sarah (12:30-1)"
+                    ],
+                    "value": "Mike (12-12:30) Sarah (12:30-1)",
+                    "value_type": "datetime_or_time"
+                }
+            ],
+            "tables": [
+                {
+                    "headers": [
+                        "Request Time",
+                        "From",
+                        "To",
+                        "Porter / Status"
+                    ],
+                    "rows": [
+                        {
+                            "Request Time": "10:00:00",
+                            "From": "4B - Bed 2",
+                            "To": "Main Entrance",
+                            "Porter / Status": "Mike (Completed)"
+                        },
+                        {
+                            "Request Time": "10:15:00",
+                            "From": "3A - Bed 1",
+                            "To": "Ambulance Bay",
+                            "Porter / Status": "Sarah (Delayed - Pt in bathroom)"
+                        },
+                        {
+                            "Request Time": "10:45:00",
+                            "From": "5C - Private",
+                            "To": "Parking Lot",
+                            "Porter / Status": "UNASSIGNED"
+                        }
+                    ],
+                    "was_rotated": false,
+                    "table_orientation": "horizontal"
+                }
+            ]
+        }
+    ]
+}
