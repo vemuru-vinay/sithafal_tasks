@@ -13,6 +13,7 @@ dataset = dataset["train"]
 model_name = "gpt2"
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
+tokenizer.pad_token = tokenizer.eos_token
 
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
@@ -39,15 +40,21 @@ model = get_peft_model(model, config)
 # -----------------------------
 
 def format_example(example):
-    text = f"Instruction: {example['instruction']}\nInput: {example['input']}\nOutput: {example['output']}"
-    tokens = tokenizer(
-        text,
-        truncation=True,
-        padding="max_length",
-        max_length=256
-    )
-    tokens["labels"] = tokens["input_ids"].copy()
-    return tokens
+
+    prompt = f"Instruction: {example['instruction']}\nInput: {example['input']}\nOutput:\n"
+    response = example["output"]
+
+    prompt_tokens = tokenizer(prompt, truncation=True, max_length=256)
+    response_tokens = tokenizer(response, truncation=True, max_length=256)
+
+    input_ids = prompt_tokens["input_ids"] + response_tokens["input_ids"]
+
+    labels = [-100]*len(prompt_tokens["input_ids"]) + response_tokens["input_ids"]
+
+    return {
+        "input_ids": input_ids,
+        "labels": labels
+    }
 
 tokenized_dataset = dataset.map(format_example)
 
@@ -84,15 +91,34 @@ trainer.train()
 # 8. Test generation
 # -----------------------------
 
-prompt = "Instruction: Generate UI JSON for login page\nInput: Login screen with email and password\nOutput:"
+prompt = """Instruction: Generate UI JSON
+Input: Login page with email input, password input and login button
+Output:
+"""
 
-inputs = tokenizer(prompt, return_tensors="pt")
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
+model.to(device)
+
+inputs = tokenizer(prompt, return_tensors="pt").to(device)
 
 with torch.no_grad():
     output = model.generate(
-        **inputs,
-        max_length=200
-    )
+    **inputs,
+    max_new_tokens=150,
+    min_new_tokens=20,
+    do_sample=True,
+    temperature=0.9,
+    top_p=0.95,
+    top_k=50,
+    repetition_penalty=1.2,
+    pad_token_id=tokenizer.eos_token_id
+)
+print("\n======================")
+print("Output : ")
+print("======================\n")
 
-print("\nGenerated Output:\n")
-print(tokenizer.decode(output[0]))
+generated = output[0][inputs["input_ids"].shape[1]:]
+decoded = tokenizer.decode(generated, skip_special_tokens=True)
+
+print(decoded)
