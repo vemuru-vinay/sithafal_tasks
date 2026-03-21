@@ -1,0 +1,221 @@
+{
+  "summary": {
+    "questions_evaluated": 5,
+    "context_used_count": 5,
+    "fallback_context_count": 0,
+    "avg_keyword_coverage_without_context": 0.3,
+    "avg_keyword_coverage_with_context": 1.0
+  },
+  "results": [
+    {
+      "question_id": "stripe_webhook_signature",
+      "question": "How do I verify a Stripe webhook signature in Python?",
+      "topic": "stripe",
+      "without_context": {
+        "answer": "The answer below was generated without external documentation context.\n\nVerify the incoming webhook using Stripe's Python SDK and reject requests whose signature check fails.\n\n```python\nimport stripe\n\ndef verify_webhook(body, signature, secret):\n    return stripe.Webhook.construct_event(body, signature, secret)\n```\n",
+        "model": "gpt-4o-mini",
+        "source": "fallback",
+        "metrics": {
+          "response_length": 317,
+          "has_code_block": true,
+          "matched_keywords": [
+            "construct_event"
+          ],
+          "match_count": 1,
+          "total_keywords": 4,
+          "coverage_ratio": 0.25
+        }
+      },
+      "with_context": {
+        "answer": "The answer below was generated with documentation context.\n\nUse Stripe's official verification helper with the raw request body, the `Stripe-Signature` header, and your `endpoint_secret`.\n\n```python\nimport stripe\nfrom fastapi import FastAPI, Header, HTTPException, Request\n\napp = FastAPI()\nendpoint_secret = 'whsec_...'\n\n@app.post('/stripe/webhook')\nasync def stripe_webhook(request: Request, stripe_signature: str = Header(alias='Stripe-Signature')):\n    payload = await request.body()\n    try:\n        event = stripe.Webhook.construct_event(payload, stripe_signature, endpoint_secret)\n    except ValueError:\n        raise HTTPException(status_code=400, detail='Invalid payload')\n    except stripe.error.SignatureVerificationError:\n        raise HTTPException(status_code=400, detail='Invalid signature')\n    return {'type': event['type']}\n```\n",
+        "model": "gpt-4o-mini",
+        "source": "fallback",
+        "metrics": {
+          "response_length": 845,
+          "has_code_block": true,
+          "matched_keywords": [
+            "Stripe-Signature",
+            "construct_event",
+            "endpoint_secret",
+            "payload"
+          ],
+          "match_count": 4,
+          "total_keywords": 4,
+          "coverage_ratio": 1.0
+        }
+      },
+      "retrieved_docs_summary": "status=ok; source=chub-cli; search_command=D:\\All Projects\\Sithafal Projects\\Sithafal Task - 5\\context-hub-evaluation\\tools\\chub.cmd search stripe; get_command=D:\\All Projects\\Sithafal Projects\\Sithafal Task - 5\\context-hub-evaluation\\tools\\chub.cmd get stripe/webhook --lang python; preview=Stripe webhook verification (Python) Use the raw request body and the Stripe-Signature header when verifying webhooks.",
+      "retrieved_docs_source": "chub-cli",
+      "retrieved_docs_status": "ok",
+      "retrieved_docs_excerpt": "Stripe webhook verification (Python)\n\nUse the raw request body and the Stripe-Signature header when verifying webhooks.\n\nExample:\nimport stripe\n\nevent = stripe.Webhook.construct_event(\n    payload,\n    sig_header,\n    endpoint_secret,\n)\n\nNotes:\n- payload should be the raw bytes from the incoming request body.\n- sig_header should come from the Stripe-Signature HTTP header.\n- endpoint_secret is the webhook signing secret from the Stripe dashboard.\n- Handle ValueError for invalid payloads.\n- Handle stripe.error.SignatureVerificationError for invalid signatures."
+    },
+    {
+      "question_id": "stripe_checkout_session",
+      "question": "How do I create a Stripe checkout session using Python?",
+      "topic": "stripe",
+      "without_context": {
+        "answer": "The answer below was generated without external documentation context.\n\nCreate a checkout session with Stripe's Python client and redirect the user to the hosted payment page.\n\n```python\nimport stripe\n\ndef create_checkout(price_id):\n    return {'price_id': price_id, 'status': 'create a Stripe checkout session here'}\n```\n",
+        "model": "gpt-4o-mini",
+        "source": "fallback",
+        "metrics": {
+          "response_length": 322,
+          "has_code_block": true,
+          "matched_keywords": [],
+          "match_count": 0,
+          "total_keywords": 4,
+          "coverage_ratio": 0.0
+        }
+      },
+      "with_context": {
+        "answer": "The answer below was generated with documentation context.\n\nCreate a Checkout Session with `stripe.checkout.Session.create` and include `line_items`, `success_url`, and `cancel_url`.\n\n```python\nimport stripe\n\nstripe.api_key = 'sk_test_...'\n\nsession = stripe.checkout.Session.create(\n    mode='payment',\n    line_items=[{'price': 'price_123', 'quantity': 1}],\n    success_url='https://example.com/success',\n    cancel_url='https://example.com/cancel',\n)\nprint(session.url)\n```\n",
+        "model": "gpt-4o-mini",
+        "source": "fallback",
+        "metrics": {
+          "response_length": 476,
+          "has_code_block": true,
+          "matched_keywords": [
+            "checkout.Session.create",
+            "line_items",
+            "success_url",
+            "cancel_url"
+          ],
+          "match_count": 4,
+          "total_keywords": 4,
+          "coverage_ratio": 1.0
+        }
+      },
+      "retrieved_docs_summary": "status=ok; source=chub-cli; search_command=D:\\All Projects\\Sithafal Projects\\Sithafal Task - 5\\context-hub-evaluation\\tools\\chub.cmd search stripe; get_command=D:\\All Projects\\Sithafal Projects\\Sithafal Task - 5\\context-hub-evaluation\\tools\\chub.cmd get stripe/checkout --lang python; preview=Stripe Checkout Session creation (Python) Create a Checkout Session with stripe.checkout.Session.create.",
+      "retrieved_docs_source": "chub-cli",
+      "retrieved_docs_status": "ok",
+      "retrieved_docs_excerpt": "Stripe Checkout Session creation (Python)\n\nCreate a Checkout Session with stripe.checkout.Session.create.\n\nExample:\nimport stripe\n\nsession = stripe.checkout.Session.create(\n    mode=\"payment\",\n    line_items=[{\"price\": \"price_123\", \"quantity\": 1}],\n    success_url=\"https://example.com/success\",\n    cancel_url=\"https://example.com/cancel\",\n)\n\nNotes:\n- Provide line_items with a price identifier and quantity.\n- Use success_url and cancel_url to control post-payment redirects.\n- Access session.url to redirect the user to Checkout."
+    },
+    {
+      "question_id": "fastapi_background_tasks",
+      "question": "How do I implement FastAPI background tasks?",
+      "topic": "fastapi",
+      "without_context": {
+        "answer": "The answer below was generated without external documentation context.\n\nUse a background job pattern in FastAPI so the response can return before the extra work finishes.\n\n```python\nfrom fastapi import FastAPI\n\napp = FastAPI()\n\n@app.post('/notify')\nasync def notify():\n    return {'message': 'queued'}\n```\n",
+        "model": "gpt-4o-mini",
+        "source": "fallback",
+        "metrics": {
+          "response_length": 306,
+          "has_code_block": true,
+          "matched_keywords": [
+            "FastAPI",
+            "async"
+          ],
+          "match_count": 2,
+          "total_keywords": 4,
+          "coverage_ratio": 0.5
+        }
+      },
+      "with_context": {
+        "answer": "The answer below was generated with documentation context.\n\nFastAPI background tasks use `BackgroundTasks` in the route signature and `add_task` to queue work after the response is returned.\n\n```python\nfrom fastapi import BackgroundTasks, FastAPI\n\napp = FastAPI()\n\ndef write_log(email: str) -> None:\n    with open('notifications.log', 'a', encoding='utf-8') as file:\n        file.write(f'Sent to {email}\\n')\n\n@app.post('/notify')\nasync def notify(email: str, background_tasks: BackgroundTasks):\n    background_tasks.add_task(write_log, email)\n    return {'message': 'Notification scheduled'}\n```\n",
+        "model": "gpt-4o-mini",
+        "source": "fallback",
+        "metrics": {
+          "response_length": 596,
+          "has_code_block": true,
+          "matched_keywords": [
+            "BackgroundTasks",
+            "add_task",
+            "FastAPI",
+            "async"
+          ],
+          "match_count": 4,
+          "total_keywords": 4,
+          "coverage_ratio": 1.0
+        }
+      },
+      "retrieved_docs_summary": "status=ok; source=chub-cli; search_command=D:\\All Projects\\Sithafal Projects\\Sithafal Task - 5\\context-hub-evaluation\\tools\\chub.cmd search fastapi; get_command=D:\\All Projects\\Sithafal Projects\\Sithafal Task - 5\\context-hub-evaluation\\tools\\chub.cmd get fastapi/background-tasks --lang python; preview=FastAPI background tasks Use BackgroundTasks to schedule work after returning a response.",
+      "retrieved_docs_source": "chub-cli",
+      "retrieved_docs_status": "ok",
+      "retrieved_docs_excerpt": "FastAPI background tasks\n\nUse BackgroundTasks to schedule work after returning a response.\n\nExample:\nfrom fastapi import BackgroundTasks, FastAPI\n\napp = FastAPI()\n\ndef write_notification(email: str) -> None:\n    with open(\"notifications.log\", \"a\", encoding=\"utf-8\") as file:\n        file.write(f\"sent to {email}\\n\")\n\n@app.post(\"/notify\")\nasync def notify(email: str, background_tasks: BackgroundTasks):\n    background_tasks.add_task(write_notification, email)\n    return {\"message\": \"Notification scheduled\"}\n\nNotes:\n- Add BackgroundTasks to the route signature.\n- Use add_task(function, *args) to enqueue the work."
+    },
+    {
+      "question_id": "github_webhook_signature",
+      "question": "How do I validate a GitHub webhook signature in Python?",
+      "topic": "github",
+      "without_context": {
+        "answer": "The answer below was generated without external documentation context.\n\nCompute an HMAC for the webhook body and compare it to the signature GitHub sends.\n\n```python\nimport hmac\nimport hashlib\n\ndef verify(secret, payload, signature):\n    expected = hmac.new(secret.encode(), payload, hashlib.sha256).hexdigest()\n    return expected == signature\n```\n",
+        "model": "gpt-4o-mini",
+        "source": "fallback",
+        "metrics": {
+          "response_length": 349,
+          "has_code_block": true,
+          "matched_keywords": [
+            "hmac",
+            "sha256"
+          ],
+          "match_count": 2,
+          "total_keywords": 4,
+          "coverage_ratio": 0.5
+        }
+      },
+      "with_context": {
+        "answer": "The answer below was generated with documentation context.\n\nValidate the `X-Hub-Signature-256` header with `hmac`, `sha256`, and `compare_digest`.\n\n```python\nimport hashlib\nimport hmac\n\ndef is_valid_signature(secret: str, payload: bytes, header_value: str) -> bool:\n    digest = hmac.new(secret.encode(), payload, hashlib.sha256).hexdigest()\n    expected = f'sha256={digest}'\n    return hmac.compare_digest(expected, header_value)\n```\n",
+        "model": "gpt-4o-mini",
+        "source": "fallback",
+        "metrics": {
+          "response_length": 435,
+          "has_code_block": true,
+          "matched_keywords": [
+            "X-Hub-Signature-256",
+            "hmac",
+            "sha256",
+            "compare_digest"
+          ],
+          "match_count": 4,
+          "total_keywords": 4,
+          "coverage_ratio": 1.0
+        }
+      },
+      "retrieved_docs_summary": "status=ok; source=chub-cli; search_command=D:\\All Projects\\Sithafal Projects\\Sithafal Task - 5\\context-hub-evaluation\\tools\\chub.cmd search github; get_command=D:\\All Projects\\Sithafal Projects\\Sithafal Task - 5\\context-hub-evaluation\\tools\\chub.cmd get github/webhooks --lang python; preview=GitHub webhook signature validation (Python) GitHub sends the X-Hub-Signature-256 header for webhook verification.",
+      "retrieved_docs_source": "chub-cli",
+      "retrieved_docs_status": "ok",
+      "retrieved_docs_excerpt": "GitHub webhook signature validation (Python)\n\nGitHub sends the X-Hub-Signature-256 header for webhook verification.\n\nExample:\nimport hashlib\nimport hmac\n\ndef is_valid_signature(secret: str, payload: bytes, header_value: str) -> bool:\n    digest = hmac.new(secret.encode(\"utf-8\"), payload, hashlib.sha256).hexdigest()\n    expected = f\"sha256={digest}\"\n    return hmac.compare_digest(expected, header_value)\n\nNotes:\n- Use the raw request body bytes as payload.\n- Compare the computed digest with X-Hub-Signature-256.\n- Use compare_digest to avoid timing attacks."
+    },
+    {
+      "question_id": "boto3_s3_upload",
+      "question": "How do I upload a file to AWS S3 using boto3?",
+      "topic": "boto3",
+      "without_context": {
+        "answer": "The answer below was generated without external documentation context.\n\nCreate an S3 client and upload the file with boto3.\n\n```python\nimport boto3\n\ndef upload(path):\n    s3 = boto3.client('s3')\n    return s3\n```\n",
+        "model": "gpt-4o-mini",
+        "source": "fallback",
+        "metrics": {
+          "response_length": 213,
+          "has_code_block": true,
+          "matched_keywords": [
+            "boto3.client"
+          ],
+          "match_count": 1,
+          "total_keywords": 4,
+          "coverage_ratio": 0.25
+        }
+      },
+      "with_context": {
+        "answer": "The answer below was generated with documentation context.\n\nUse `boto3.client('s3')` and call `upload_file(path, bucket, key)` with the target `Bucket` and object `Key`.\n\n```python\nimport boto3\nfrom botocore.exceptions import ClientError\n\ndef upload_file(path: str, bucket: str, key: str) -> bool:\n    s3 = boto3.client('s3')\n    try:\n        s3.upload_file(path, bucket, key)\n        return True\n    except ClientError as exc:\n        print(f'Upload failed: {exc}')\n        return False\n```\n",
+        "model": "gpt-4o-mini",
+        "source": "fallback",
+        "metrics": {
+          "response_length": 492,
+          "has_code_block": true,
+          "matched_keywords": [
+            "boto3.client",
+            "upload_file",
+            "Bucket",
+            "Key"
+          ],
+          "match_count": 4,
+          "total_keywords": 4,
+          "coverage_ratio": 1.0
+        }
+      },
+      "retrieved_docs_summary": "status=ok; source=chub-cli; search_command=D:\\All Projects\\Sithafal Projects\\Sithafal Task - 5\\context-hub-evaluation\\tools\\chub.cmd search boto3; get_command=D:\\All Projects\\Sithafal Projects\\Sithafal Task - 5\\context-hub-evaluation\\tools\\chub.cmd get aws/s3-upload --lang python; preview=AWS S3 upload with boto3 (Python) Use boto3.client(\"s3\").upload_file for simple uploads.",
+      "retrieved_docs_source": "chub-cli",
+      "retrieved_docs_status": "ok",
+      "retrieved_docs_excerpt": "AWS S3 upload with boto3 (Python)\n\nUse boto3.client(\"s3\").upload_file for simple uploads.\n\nExample:\nimport boto3\nfrom botocore.exceptions import ClientError\n\ndef upload_file(path: str, bucket: str, key: str) -> bool:\n    s3 = boto3.client(\"s3\")\n    try:\n        s3.upload_file(path, bucket, key)\n        return True\n    except ClientError:\n        return False\n\nNotes:\n- path is the local filename.\n- bucket is the target S3 bucket name.\n- key is the destination object key in S3."
+    }
+  ]
+}

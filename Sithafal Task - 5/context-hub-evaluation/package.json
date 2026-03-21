@@ -1,0 +1,12 @@
+{
+  "name": "context-hub-evaluation",
+  "version": "1.0.0",
+  "description": "`context-hub-evaluation` is a lightweight Python research experiment for measuring whether Context Hub improves LLM-generated developer answers by supplying up-to-date documentation at generation time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

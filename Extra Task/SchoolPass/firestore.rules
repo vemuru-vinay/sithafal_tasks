@@ -1,0 +1,79 @@
+// firestore.rules
+// Deploy with: firebase deploy --only firestore:rules
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Helper functions ──────────────────────────────
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function userProfile() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function hasRole(role) {
+      return isSignedIn() && userProfile().role == role;
+    }
+
+    // ── Users collection ──────────────────────────────
+    match /users/{userId} {
+      // Users can only read/write their own profile
+      allow read:   if isSignedIn() && request.auth.uid == userId;
+      allow write:  if isSignedIn() && request.auth.uid == userId;
+      // Allow any signed-in user to read profiles
+      // (needed for looking up fcmToken for notifications)
+      allow read:   if isSignedIn();
+    }
+
+    // ── Exit Requests ─────────────────────────────────
+    match /exitRequests/{requestId} {
+
+      // Students: create their own + read/update their own
+      allow create: if hasRole('student')
+        && request.resource.data.studentId == request.auth.uid
+        && request.resource.data.status == 'PENDING';
+
+      allow read:   if isSignedIn() && (
+        resource.data.studentId  == request.auth.uid ||
+        resource.data.parentId   == request.auth.uid ||
+        resource.data.mentorId   == request.auth.uid ||
+        hasRole('watchman') ||
+        hasRole('admin')
+      );
+
+      // Students: can only withdraw their own pending request
+      allow update: if hasRole('student')
+        && resource.data.studentId == request.auth.uid
+        && resource.data.status == 'PENDING'
+        && request.resource.data.status == 'WITHDRAWN';
+
+      // Parents: can only approve/reject requests addressed to them
+      allow update: if hasRole('parent')
+        && resource.data.parentId == request.auth.uid
+        && resource.data.status == 'PENDING'
+        && request.resource.data.status in ['PARENT_APPROVED', 'REJECTED'];
+
+      // Mentors: can only acknowledge/flag requests assigned to them
+      allow update: if hasRole('mentor')
+        && resource.data.mentorId == request.auth.uid
+        && resource.data.status == 'PARENT_APPROVED'
+        && request.resource.data.status in ['MENTOR_ACKNOWLEDGED', 'MENTOR_FLAGGED'];
+
+      // Watchmen: can confirm exit/return
+      allow update: if hasRole('watchman')
+        && resource.data.status in ['MENTOR_ACKNOWLEDGED', 'EXITED']
+        && request.resource.data.status in ['EXITED', 'RETURNED'];
+
+      // Admins: full access
+      allow write:  if hasRole('admin');
+
+      // No delete for anyone
+      allow delete: if false;
+    }
+
+  }
+}

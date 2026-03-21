@@ -1,0 +1,272 @@
+{
+  "document_type": "Electricity Bill",
+  "title": "KNOW YOUR BILL",
+  "important_fields": [
+    {
+      "key": "customer_name",
+      "value": "MR. KUMAR"
+    },
+    {
+      "key": "ca_number",
+      "value": "6000XXXXXXX"
+    },
+    {
+      "key": "bill_date",
+      "value": "18/07/2015"
+    },
+    {
+      "key": "connection_type",
+      "value": "PERMANENT"
+    },
+    {
+      "key": "tariff_category",
+      "value": "Domestic Lighting-DL"
+    },
+    {
+      "key": "sanctioned_load_kw",
+      "value": "2.00"
+    },
+    {
+      "key": "mdi_reading_kw",
+      "value": "2.10KW"
+    },
+    {
+      "key": "bill_basis",
+      "value": "Actual(KWH)"
+    },
+    {
+      "key": "bill_remark",
+      "value": "Bill On Reading"
+    },
+    {
+      "key": "current_meter_reading_date",
+      "value": "17/07/2015"
+    },
+    {
+      "key": "current_meter_reading",
+      "value": "9350"
+    },
+    {
+      "key": "previous_meter_reading_date",
+      "value": "16/06/2015"
+    },
+    {
+      "key": "previous_meter_reading",
+      "value": "9000"
+    },
+    {
+      "key": "reading_difference",
+      "value": "350"
+    },
+    {
+      "key": "bill_period",
+      "value": "17/06/2015 to 17/07/2015"
+    },
+    {
+      "key": "due_date",
+      "value": "05-AUG-2015"
+    },
+    {
+      "key": "amount_payable",
+      "value": "₹1190.00"
+    },
+    {
+      "key": "last_payment_amount",
+      "value": "₹20590.00"
+    },
+    {
+      "key": "last_payment_date",
+      "value": "10-JUL-2015"
+    }
+  ],
+  "sections": [
+    {
+      "heading": "Customer Information",
+      "items": [
+        {
+          "key": "name",
+          "value": "MR. KUMAR"
+        },
+        {
+          "key": "connection_type",
+          "value": "PERMANENT"
+        },
+        {
+          "key": "tariff_category",
+          "value": "Domestic Lighting-DL"
+        },
+        {
+          "key": "sanctioned_load_kw",
+          "value": "2.00"
+        },
+        {
+          "key": "mdi_reading_kw",
+          "value": "2.10KW"
+        }
+      ]
+    },
+    {
+      "heading": "Account Information",
+      "items": [
+        {
+          "key": "ca_no",
+          "value": "6000XXXXXXX"
+        },
+        {
+          "key": "bill_basis",
+          "value": "Actual(KWH)"
+        },
+        {
+          "key": "bill_remark",
+          "value": "Bill On Reading"
+        },
+        {
+          "key": "bill_date",
+          "value": "18/07/2015"
+        }
+      ]
+    },
+    {
+      "heading": "Bill Summary",
+      "items": [
+        {
+          "key": "arrears_refund",
+          "value": "8.51"
+        },
+        {
+          "key": "adjustments",
+          "value": "2028.97"
+        },
+        {
+          "key": "current_demand",
+          "value": "-844.06"
+        },
+        {
+          "key": "subsidy",
+          "value": "1193.42"
+        },
+        {
+          "key": "due_date",
+          "value": "05-AUG-2015"
+        },
+        {
+          "key": "net_amount_payable",
+          "value": "₹1190.00"
+        }
+      ]
+    },
+    {
+      "heading": "Meter Information",
+      "items": [
+        {
+          "key": "meter_status",
+          "value": "Single Phase Meter Ok"
+        },
+        {
+          "key": "current_meter_reading_date",
+          "value": "17/07/2015"
+        },
+        {
+          "key": "current_meter_reading",
+          "value": "9350"
+        },
+        {
+          "key": "previous_meter_reading_date",
+          "value": "16/06/2015"
+        },
+        {
+          "key": "previous_meter_reading",
+          "value": "9000"
+        },
+        {
+          "key": "reading_difference",
+          "value": "350"
+        }
+      ]
+    },
+    {
+      "heading": "Energy Charges Detail",
+      "items": [
+        {
+          "key": "units_203",
+          "value": "4.00"
+        },
+        {
+          "key": "rate_203",
+          "value": "812.00"
+        },
+        {
+          "key": "units_147",
+          "value": "5.95"
+        },
+        {
+          "key": "rate_147",
+          "value": "874.65"
+        },
+        {
+          "key": "total_units",
+          "value": "350"
+        },
+        {
+          "key": "total_amount",
+          "value": "1686.65"
+        }
+      ]
+    },
+    {
+      "heading": "Current Demand Details",
+      "items": [
+        {
+          "key": "bill_period",
+          "value": "17/06/2015 to 17/07/2015"
+        },
+        {
+          "key": "fixed_charges",
+          "value": "40.60"
+        },
+        {
+          "key": "energy_charges",
+          "value": "1686.65"
+        },
+        {
+          "key": "ppac_on_fixed_charges",
+          "value": "1.62"
+        },
+        {
+          "key": "ppac_on_energy_charges",
+          "value": "67.47"
+        },
+        {
+          "key": "surcharge_on_fixed_charges",
+          "value": "3.25"
+        },
+        {
+          "key": "surcharge_on_energy_charges",
+          "value": "134.93"
+        },
+        {
+          "key": "electricity_tax",
+          "value": "94.45"
+        },
+        {
+          "key": "total_current_demand",
+          "value": "2028.97"
+        }
+      ]
+    },
+    {
+      "heading": "Last Payment",
+      "items": [
+        {
+          "key": "last_payment_amount",
+          "value": "₹20590.00"
+        },
+        {
+          "key": "last_payment_date",
+          "value": "10-JUL-2015"
+        }
+      ]
+    }
+  ],
+  "summary": "This document is an electricity bill from Tata Power-DDL for customer MR. KUMAR, providing detailed account, meter readings, energy charges, bill summary, and payment information for the billing period ending July 2015."
+}
